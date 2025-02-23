@@ -25,7 +25,7 @@ def job(sign, CHAT_ID=CHAT_ID):
     bot.send_message(chat_id=CHAT_ID, text=text, parse_mode="Markdown")
 
 if __name__ == '__main__':
-    schedule.every().day.at("09:00",'Europe/Moscow').do(job, sign="Рыбы")
+    schedule.every().day.at("09:00",'Europe/Moscow').do(job, sign="Рыбы", CHAT_ID='@pisces_the')
     schedule.every().day.at("09:01",'Europe/Moscow').do(job, sign="Овен")
     schedule.every().day.at("09:02",'Europe/Moscow').do(job, sign="Телец")
     schedule.every().day.at("09:03",'Europe/Moscow').do(job, sign="Близнецы")
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     schedule.every().day.at("09:07",'Europe/Moscow').do(job, sign="Весы")
     schedule.every().day.at("09:08",'Europe/Moscow').do(job, sign="Скорпион")
     schedule.every().day.at("09:09",'Europe/Moscow').do(job, sign="Стрелец")
-    schedule.every().day.at("09:10",'Europe/Moscow').do(job, sign="Козерог")
+    schedule.every().day.at("09:10",'Europe/Moscow').do(job, sign="Козерог", CHAT_ID='@capricorn_the')
     schedule.every().day.at("09:11",'Europe/Moscow').do(job, sign="Водолей")
 
     fifteen_minutes = 15 * 60
