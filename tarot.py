@@ -36,7 +36,7 @@ if __name__ == '__main__':
     schedule.every().day.at("09:08",'Europe/Moscow').do(job, sign="Скорпион")
     schedule.every().day.at("09:09",'Europe/Moscow').do(job, sign="Стрелец")
     schedule.every().day.at("09:10",'Europe/Moscow').do(job, sign="Козерог", CHAT_ID='@capricorn_the')
-    schedule.every().day.at("09:11",'Europe/Moscow').do(job, sign="Водолей")
+    schedule.every().day.at("09:11",'Europe/Moscow').do(job, sign="Водолей", CHAT_ID='@aquarius_the')
 
     fifteen_minutes = 15 * 60
 
