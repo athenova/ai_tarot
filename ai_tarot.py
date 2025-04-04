@@ -24,20 +24,20 @@ class TarotBlogger(SimplestBlogger):
         ]
         super().__init__(builder, posters, True)
 
-bloggers = [
-    TarotBlogger(sign='рыбы', tg_chat_id='@pisces_the', vk_group_id='229837683'),
-    TarotBlogger(sign='овен', tg_chat_id='@aries_the', vk_group_id='229837854'),
-    TarotBlogger(sign='телец', tg_chat_id='@ai_tarot', vk_group_id='229860740'),
-    TarotBlogger(sign='близнецы', tg_chat_id='@gemini_the', vk_group_id='229837895'),
-    TarotBlogger(sign='рак', tg_chat_id='@ai_tarot', vk_group_id='229860780'),
-    TarotBlogger(sign='лев', tg_chat_id='@ai_tarot', vk_group_id='229860665'),
-    TarotBlogger(sign='дева', tg_chat_id='@ai_tarot', vk_group_id='229860810'),
-    TarotBlogger(sign='весы', tg_chat_id='@ai_tarot', vk_group_id='229860834'),
-    TarotBlogger(sign='скорпион', tg_chat_id='@ai_tarot', vk_group_id='229860866'),
-    TarotBlogger(sign='стрелец', tg_chat_id='@ai_tarot', vk_group_id='229860894'),
-    TarotBlogger(sign='козерог', tg_chat_id='@capricorn_the', vk_group_id='229837876'),
-    TarotBlogger(sign='водолей', tg_chat_id='@aquarius_the', vk_group_id='229837930'),
-]
-
-for blogger in bloggers:
-    blogger.post()
+def handle():
+    bloggers = [
+        TarotBlogger(sign='рыбы', tg_chat_id='@pisces_the', vk_group_id='229837683'),
+        TarotBlogger(sign='овен', tg_chat_id='@aries_the', vk_group_id='229837854'),
+        TarotBlogger(sign='телец', tg_chat_id='@ai_tarot', vk_group_id='229860740'),
+        TarotBlogger(sign='близнецы', tg_chat_id='@gemini_the', vk_group_id='229837895'),
+        TarotBlogger(sign='рак', tg_chat_id='@ai_tarot', vk_group_id='229860780'),
+        TarotBlogger(sign='лев', tg_chat_id='@ai_tarot', vk_group_id='229860665'),
+        TarotBlogger(sign='дева', tg_chat_id='@ai_tarot', vk_group_id='229860810'),
+        TarotBlogger(sign='весы', tg_chat_id='@ai_tarot', vk_group_id='229860834'),
+        TarotBlogger(sign='скорпион', tg_chat_id='@ai_tarot', vk_group_id='229860866'),
+        TarotBlogger(sign='стрелец', tg_chat_id='@ai_tarot', vk_group_id='229860894'),
+        TarotBlogger(sign='козерог', tg_chat_id='@capricorn_the', vk_group_id='229837876'),
+        TarotBlogger(sign='водолей', tg_chat_id='@aquarius_the', vk_group_id='229837930'),
+    ]
+    for blogger in bloggers:
+        blogger.post()
